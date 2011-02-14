@@ -1,0 +1,39 @@
+This script checks if there are any old packages in IUS Stable,
+an old package would be if php52-5.2.16 was in stable along with php52-5.2.17.
+
+$ ./old_packages_in_stable.py 
+===================================
+Old Packages in IUS Stable for EL5
+===================================
+php53u-5.3.5-1.ius.el5
+php53u-ioncube-loader-3.3.17-2.ius.el5
+php53u-pear-1.8.1-6.ius.el5
+php53u-pecl-apc-3.1.6-3.ius.el5
+php53u-pecl-imagick-3.0.1-1.ius.el5
+php53u-pecl-memcache-2.2.6-1.ius.el5
+php53u-suhosin-0.9.32.1-2.ius.el5
+ 
+===================================
+Commands to archive:
+===================================
+rpe-task untag php53u-5.3.5-1.ius -t stable
+rpe-task tag php53u-5.3.5-1.ius -t archive
+ 
+rpe-task untag php53u-ioncube-loader-3.3.17-2.ius -t stable
+rpe-task tag php53u-ioncube-loader-3.3.17-2.ius -t archive
+ 
+rpe-task untag php53u-pear-1.8.1-6.ius -t stable
+rpe-task tag php53u-pear-1.8.1-6.ius -t archive
+ 
+rpe-task untag php53u-pecl-apc-3.1.6-3.ius -t stable
+rpe-task tag php53u-pecl-apc-3.1.6-3.ius -t archive
+ 
+rpe-task untag php53u-pecl-imagick-3.0.1-1.ius -t stable
+rpe-task tag php53u-pecl-imagick-3.0.1-1.ius -t archive
+ 
+rpe-task untag php53u-pecl-memcache-2.2.6-1.ius -t stable
+rpe-task tag php53u-pecl-memcache-2.2.6-1.ius -t archive
+ 
+rpe-task untag php53u-suhosin-0.9.32.1-2.ius -t stable
+rpe-task tag php53u-suhosin-0.9.32.1-2.ius -t archive
+ 
